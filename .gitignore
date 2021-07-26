@@ -1,0 +1,17 @@
+.Rproj.user
+.Rhistory
+Rplots*
+packrat/lib*/
+logs/*
+packrat/src/*
+src/paper/libs/*
+.snakemake
+out/*
+_book
+*.pdf
+*.log
+.Rprofile
+test.R
+*.Rproj
+.DS_Store
+sandbox/*
