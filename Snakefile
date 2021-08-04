@@ -16,10 +16,27 @@ TABLES = glob_wildcards(config["src_table_specs"] + "{fname}.json").fname
 ## all            : build paper and slides that are the core of the project
 rule all:
     input:
-        table = config["out_tables"] + "table_01.tex"
+        table = config["out_tables"] + "table_01.tex",
+        figure = config["out_figures"] + "unconditional_convergence.pdf"
 
 
 # --- Build Rules --- #
+## figures: the recipe to make a figures using intermediate country data from MRW
+rule figures:
+    input:
+        script = config["src_figures"] + "unconditional_convergence.R",
+        data   = config["out_data"] + "mrw_complete.csv",
+        subset = config["src_data_specs"] + "subset_intermediate.json"
+    output:
+        fig = config["out_figures"] + "unconditional_convergence.pdf",
+    log:
+        config["log"] + "figures/unconditional_convergence.txt"
+    shell:
+        "Rscript {input.script} \
+            --data {input.data} \
+            --subset {input.subset} \
+            --out {output.fig}"
+
 # table: build one table
 rule table:
     input:
