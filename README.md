@@ -13,8 +13,10 @@ The `R` language is used to perform all steps of our analysis and to compile our
 
 ## Motivating Example
 
-Our example project involves replicating the main tables and figures of Mankiw, Romer and Weil's classic 1992 QJE article "[A Contribution to the Empirics of Economic Growth.](https://eml.berkeley.edu/~dromer/papers/MRW_QJE1992.pdf)"
+Our example project involves replicating a subset of the main tables and figures of Mankiw, Romer and Weil's classic 1992 QJE article "[A Contribution to the Empirics of Economic Growth.](https://eml.berkeley.edu/~dromer/papers/MRW_QJE1992.pdf)"
 We hope by using an example that is simple in its methods readers focus on how we have chosen to assemble both pure R codes and the Snakemake rules that build our project, rather than getting lost on econometric methodologies.
+
+For a full replication of the MRW tables and results see [here](https://github.com/lachlandeer/snakemake-econ-r)
 
 ## Installation Instructions
 
@@ -25,7 +27,6 @@ You need to have the following software and packages installed:
 1. Python 3 (Python 3.6 or higher)
 2. Snakemake (we'll install the correct version in a couple of lines time!)
 3. R (version 4.0.x)
-   * For R version 3.6.x see an archived version [here](https://github.com/lachlandeer/snakemake-econ-r/tree/archive/r-3.6).
 
 ### Installing Python
 
@@ -159,7 +160,7 @@ Major changes are tracked in the [NEWS file](./NEWS.md) with brief descriptions 
 ## Comments / Suggestions / Issues
 
 We'd love to hear your comments, suggestions or installation issues encountered when running the example.
-[Post an issue on Github.](https://github.com/lachlandeer/snakemake-econ-r/issues)
+[Post an issue on Github.](https://github.com/lachlandeer/snakemake-econ-r-simple/issues)
 
 ## Suggested Citation
 
