@@ -39,10 +39,11 @@ if (is.null(opt$spec)){
 }
 
 # Load Model
-print("LoadingTable Specification Model")
+message("Loading Table Specification Model")
 tab_str <- fromJSON(file = opt$spec)
 
 # parse JSON
+message("Parsing JSON")
 model_path <- tab_str$MODEL_PATH
 models     <- eval(parse(text = tab_str$MODELS))
 col_names <-  eval(parse(text = tab_str$COL_NAMES))
@@ -70,7 +71,7 @@ if (as.logical(tab_str$RESTRICTED_MODEL) == TRUE){
   custom_row <- NULL
 }
 
-# Formatters for Goodess of fit stats
+# Formatters for Goodness of fit stats
 f_int <- function(x) format(round(x, 2), big.mark=",", nsmall = 0) # integers
 f_dec <- function(x) format(round(x, 2), big.mark=",", nsmall = 2) # floats
 
