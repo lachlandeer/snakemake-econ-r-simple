@@ -1,8 +1,7 @@
 # A Reproducible Workflow for Economics Research Using Snakemake and R
 
-[![Build Status](https://travis-ci.org/lachlandeer/snakemake-econ-r.svg?branch=master)](https://travis-ci.org/lachlandeer/snakemake-econ-r)
-[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![lifecycle](https://img.shields.io/badge/version-0.5.1-red.svg)]()
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![lifecycle](https://img.shields.io/badge/version-1.0.0-red.svg)]()
 
 ## Introduction
 
@@ -164,4 +163,4 @@ We'd love to hear your comments, suggestions or installation issues encountered 
 
 ## Suggested Citation
 
-Deer, Lachlan and Julian Langer and Ulrich Bergmann. 2021. A Reproducible Workflow for Economics Research Using Snakemake and R.
+Ulrich Bergmann, Deer, Lachlan and Julian Langer. 2024. Reproducible Workflows for Computational and Empirical Economics Research with Snakemake. Working Paper
